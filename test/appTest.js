@@ -5,5 +5,10 @@ describe('App', function() {
 	it('app should return hello', function() {
 		let result = sayHello();
 		assert.equal(result, 'hello');
+	});
+
+	it('sayHello should return string', function() {
+		let result = sayHello();
+		assert.typeOf(result, 'string');
 	})
 })
